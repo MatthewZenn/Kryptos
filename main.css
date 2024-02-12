@@ -1,0 +1,238 @@
+body, html {
+  background-color: #2a2e30;
+}
+
+@font-face {
+  font-family: SegoeIcons;
+  src:url("Assets/Segoe Fluent Icons.ttf");
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #383d3f;
+  border-bottom: 1px solid #474f52;
+}
+
+#reveal {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 60%;
+  height: 30px;
+  resize: none;
+  outline: none;
+  background-color: #2a2e30;
+  color: #b2bec3;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12pt;
+  border: 1px solid #6a7479;
+  border-radius: 5px;
+}
+
+#textcontainer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 92%;
+  width: 45%;
+  display: block;
+  font-family: Consolas, "Courier New", Courier, monospace;
+  background-color: #2a2e30;
+  border-left: 1px solid #474f52;
+  z-index: -1;
+  overflow-y: hidden;
+}
+
+#editor {
+  position: absolute;
+  top: 0px;
+  left: 45px;
+  height: 100%;
+  width: 96%;
+  background-color: #2a2e30;
+  color: #b2bec3;
+  font-size: 14pt;
+  outline: none;
+  border: none;
+  resize: none;
+  padding-left: 5px;
+  padding-top: 10px;
+  display: block;
+  font-family: Consolas, 'Courier New', Courier, monospace;
+}
+
+#numbers {
+  position: absolute;
+  width: 10px;
+  left: 5px;
+  top: 0;
+  background-color: none;
+  font-size: 14pt;
+  padding-top: 10px;
+  text-align: right;
+  font-family: Consolas, 'Courier New', Courier, monospace;
+}
+
+#numbers span {
+  counter-increment: linenumber;
+}
+
+#numbers span::before {
+  content: counter(linenumber);
+  display: block;
+  color: #6a7479;
+  width: 30px;
+}
+
+#textcontainer::-webkit-scrollbar {
+  width: 20px;
+  display: none;
+}
+ 
+#textcontainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+ 
+#textcontainer::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  outline: none
+}
+
+#refresh {
+  position: fixed;
+  left: 77%;
+  top: 34px;
+  width: 55px;
+  height: 28px;
+  border: none;
+  background-color: transparent;
+  color: #dff9fb;
+  font-size: 14pt;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif, SegoeIcons;
+}
+
+#refresh:hover {
+  cursor: pointer;
+  background-color: #383d3f;
+}
+
+.buttons {
+  position: fixed;
+  left: 81%;
+  top: 30px;
+  border: none;
+}
+
+#run {
+  position: relative;
+  left: 0px;
+  width: 40px;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+  color: #dff9fb;
+  font-size: 14pt;
+  border-radius: 5px;
+  font-family: SegoeIcons;
+}
+
+#run:hover {
+  cursor: pointer;
+  background-color: #2a2e30;
+}
+
+#copy {
+  position: relative;
+  left: 0px;
+  width: 40px;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+  color: #dff9fb;
+  font-size: 14pt;
+  border-radius: 5px;
+  font-family: SegoeIcons;
+}
+
+#copy:hover {
+  cursor: pointer;
+  background-color: #2a2e30;
+}
+
+#delete {
+  position: relative;
+  left: 0px;
+  width: 40px;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+  color: #ff6767;
+  font-size: 14pt;
+  border-radius: 5px;
+  font-family: SegoeIcons;
+}
+
+#delete:hover {
+  cursor: pointer;
+  background-color: #2a2e30;
+}
+
+.container {
+  position: fixed;
+  left: 20px;
+  top: 100px;
+  width: 45%;
+  height: 80%;
+  display: block;
+}
+
+#keys {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  resize: none;
+  outline: none;
+  background-color: #2a2e30;
+  color: #b2bec3;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16pt;
+  border: 1px solid #6a7479;
+  border-radius: 5px;
+}
+
+.imputs {
+  padding: 3%;
+  padding-top: 10px;
+}
+
+#namer {
+  position: relative;
+  width: 49%;
+  outline: none;
+  background-color: #2a2e30;
+  color: #b2bec3;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16pt;
+  border: 1px solid #6a7479;
+  border-radius: 5px;
+  height: 30px;
+}
+
+#validation {
+  position: relative;
+  width: 49%;
+  outline: none;
+  background-color: #2a2e30;
+  color: #b2bec3;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16pt;
+  border: 1px solid #6a7479;
+  border-radius: 5px;
+  height: 30px;
+}
